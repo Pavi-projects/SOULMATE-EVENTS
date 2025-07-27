@@ -85,7 +85,7 @@
                     <h1 class="display-4 mb-3 animated slideInDown">Event Management Compnay based in Alappuzha</h1>
                     <p class="animated slideInDown"> Event management company specializing in curating unforgettable experiences with style and precision</p>
                     <div class="d-flex align-items-center pt-4 animated slideInDown">
-                   <!--   <a href="" class="btn btn-primary py-3 px-4 me-5">Explore More</a>             button aahne     -->  
+                    < button class="btn btn-primary py-3 px-4 me-5" type="submit" onclick="openWhatsApp()">Contact Us</a>             
                    <!--    <button type="button" class="btn-play" data-bs-toggle="modal"
                         data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
@@ -611,6 +611,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+     <script>
+  function openWhatsApp() {
+    // Replace the number below with the full international format number
+    var phoneNumber = "+919995552429"; // Example: 91 for India
+    var url = "https://wa.me/" + phoneNumber;
+    window.open(url, "_blank");
+  }
+</script>
 </body>
 
 </html>
